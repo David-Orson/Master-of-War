@@ -1,14 +1,11 @@
 import React, { Component } from "react";
+import Hand from "../components/Hand";
 
 class HomePage extends Component<any, any> {
   render() {
-    return (
-      <main className="container">
-        {this.props.playerData.map((data: any) => (
-          <h3>{data.p1}</h3>
-        ))}
-      </main>
-    );
+    return this.props.playerData.map((data: any) => (
+      <Hand key={data.player} data={data} />
+    ));
   }
 }
 

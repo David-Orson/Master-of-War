@@ -8,8 +8,12 @@ class App extends Component {
   state = {
     playerData: [
       {
-        p1: "hi",
-        p2: "yes",
+        player: "computer",
+        cards: ["10", "7", "3"],
+      },
+      {
+        player: "user",
+        cards: ["8", "4", "2"],
       },
     ],
   };

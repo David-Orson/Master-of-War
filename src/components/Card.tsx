@@ -1,18 +1,9 @@
 import React, { Component } from "react";
 
 class Card extends Component<any, any> {
-  constructor(props: any) {
-    super(props);
-
-    this.state = {};
-  }
-
   render() {
-    return (
-      <main>
-        <div className="container"></div>
-      </main>
-    );
+    console.log(this.props);
+    return <div className="container">{this.props.value}</div>;
   }
 }
 
